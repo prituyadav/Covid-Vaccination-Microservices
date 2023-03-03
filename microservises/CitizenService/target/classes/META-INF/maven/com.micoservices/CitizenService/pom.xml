@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.micoservices</groupId>
-	<artifactId>VaccinationCenterService</artifactId>
+	<artifactId>CitizenService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>VaccinationCenterService</name>
+	<name>CitizenService</name>
 	<description>microservice project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
@@ -21,6 +21,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -46,16 +50,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-hystrix -->
-<dependency>
-    <groupId>org.springframework.cloud</groupId>
-    <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-    <version>2.2.10.RELEASE</version>
-</dependency>
-		
-		
-		
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>

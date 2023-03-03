@@ -34,7 +34,7 @@ public class CitizenController {
 	
     @GetMapping("/welcome")
 	public ResponseEntity<String> greetings(){
-		return new ResponseEntity<String>("welcome folks!",HttpStatus.OK);
+		return new ResponseEntity<String>("welcome folks! in Citizen services",HttpStatus.OK);
 	}
     
     
